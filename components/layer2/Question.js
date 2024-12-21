@@ -52,9 +52,7 @@ const question_two = (ctx, problem) => {
             Markup.button.callback("موی زیر پوستی دارم", "SubcutaneousHair"),
             Markup.button.callback("اصلاح موی زائد بدن", "excessBodyHair"),
           ],
-          [
-            Markup.button.callback("تیرگی بدن", "darkBody"),
-          ],
+          [Markup.button.callback("تیرگی بدن", "darkBody")],
         ])
       )
       break
@@ -81,17 +79,14 @@ const action_two = (bot) => {
   bot.action("hairFall", (ctx) => {
     ctx.sendChatAction("typing")
     ctx.deleteMessage()
-
   })
   bot.action("damagedHair", (ctx) => {
     ctx.sendChatAction("typing")
     ctx.deleteMessage()
-
   })
   bot.action("oilySkin", (ctx) => {
     ctx.reply("چربی ؟ عییی")
     ctx.deleteMessage()
-
   })
 }
 

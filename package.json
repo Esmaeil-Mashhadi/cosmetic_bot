@@ -8,7 +8,7 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
-    "nodemon": "nodemon node main.js"
+    "start": "nodemon node main.js"
   },
   "keywords": [],
   "author": "",
