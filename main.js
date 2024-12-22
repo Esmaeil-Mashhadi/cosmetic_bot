@@ -1,6 +1,5 @@
-const { Telegraf, Markup } = require("telegraf")
-const fs = require("fs")
-const { question_one, action_one } = require("./components/layer1/Question")
+const { Telegraf } = require("telegraf")
+const { Question } = require("./components/Question")
 
 require("dotenv").config()
 
@@ -9,11 +8,11 @@ const bot = new Telegraf(process.env.BOT_TOKEN)
 bot.start((ctx) =>
   ctx
     .reply(
-    `سلام ${ctx.from.first_name} جان خوش اومدی 😍 
+      `سلام ${ctx.from.first_name} جان خوش اومدی 😍 
     تو کدوم یکی از موارد زیر مشاوره میخوای ؟ `
     )
     .then(() => {
-      question_one(ctx)
+      Question(ctx, "root", bot)
     })
 )
 
@@ -22,7 +21,7 @@ bot.hears(
   (ctx) => {
     ctx.sendChatAction("typing")
     ctx.reply(`سلام ${ctx.from.first_name} جان خوش اومدی 😍`)
-    question_one(ctx)
+    Question(ctx, "root", bot)
   }
 )
 
@@ -35,8 +34,6 @@ bot.hears("test", (ctx) => {
     },
   })
 })
-
-action_one(bot)
 
 bot
   .launch()

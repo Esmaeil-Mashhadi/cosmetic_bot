@@ -1,0 +1,58 @@
+{
+    "root": {
+      "question": "یکیش رو انتخاب کن",
+      "options": {
+        "hair": "مو",
+        "faceSkin": "پوست صورت",
+        "foot": "دست و پا",
+        "bodySkin": "پوست بدن"
+      }
+    },
+    "hair": {
+      "label": "hair",
+      "question": "موی شما کدوم یکی از مشکلات زیر رو داره",
+      "options": {
+        "hairFall": "ریزش مو دارم",
+        "damagedHair": "موهام آسیب دیده"
+      }
+    },
+    "faceSkin": {
+      "label": "faceSkin",
+      "question": "مشکل پوستت چیه ؟",
+      "options": {
+        "oilySkin": "پوستم چربه",
+        "drySkin": "پوستم خشکه",
+        "excessHair": "اصلاح موهای زائد صورت",
+        "mixedSkin": "پوستم مختلطه (چرب و خشک)",
+        "otherSkinIssues": "دیگر مشکلات رایج پوست (جوش ، چین و چروک و ..)"
+      }
+    },
+    "bodySkin": {
+      "label": "bodySkin",
+      "question": "مشکل پوست بدن شما چیه؟",
+      "options": {
+        "acneSkin": "پوست بدنم جوش میزنه",
+        "dryBodySkin": "پوست بدنم خشکه",
+        "oilyBodySkin": "پوست بدنم چربه",
+        "spotedBodySkin": "پوست بدنم لک داره",
+        "SubcutaneousHair": "موی زیر پوستی دارم",
+        "excessBodyHair": "اصلاح موی زائد بدن",
+        "darkBody": "تیرگی بدن"
+      }
+    },
+    "foot": {
+      "label": "foot",
+      "question": "توی کدوم یکی مشاوره میخوای ؟",
+      "options": {
+        "crackedFoot": "دستام",
+        "dryFoot": "پاهام"
+      }
+    },
+    "drySkin":{
+      "question":"akele",
+      "options":{
+        "akele1" : "akele1"
+      }
+    }
+  }
+  
